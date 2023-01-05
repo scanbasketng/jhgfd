@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {
+	max-width: 1200px;
+	margin: auto;
+	padding: 16px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+header {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin-bottom: 16px;
+	padding: 8px;
+	background-color: #008000;
+	text-align: center;
+	color: white;
+}
+header img {
+	height: 60px;
+	margin-left: 1rem;
+}
+header h1 {
+	flex-grow: 1;
+}
+
+main {
+	display: flex;
+	flex-direction: row;
+}
+
+.filtres {
+	border-radius: 4px;
+	box-shadow: 0px 0px 4px gray;
+	margin: 8px;
+	padding: 8px;
+	min-width: 300px;
+	min-height: 400px;
+}
+.filtres h3 {
+	text-align: center;
+}
+
+.fiches {
+	flex: 1;
+	margin: 8px;
+}
+.fiches img {
+	max-width: 200px;
+}
+.fiches p {
+	margin-top: 4px;
+	margin-bottom: 4px;
+}
+
+
+
+
+.dropdownmenu,
+.dropdownmenu ul { /* Pour les sous-menus */
+    list-style-type: none; 
+    margin: 0px;
+    padding: 0px;
+}
+.dropdownmenu ul {
+    display: none;
+}
+.dropdownmenu li {
+    position: relative;
+}
+.dropdownmenu a {
+    display: block;
+    width: 120px;
+    height: 30px;
+    line-height: 30px;
+    padding: 3px 10px;
+    text-align: center;
+}
+.dropdownmenu li:hover ul {
+    display: block ;
+    position: absolute;
+    top: 36px; 
+    left: 0px; 
+    z-index: 100; 
+}
+/* Gestion des couleurs */ 
+.dropdownmenu li {   
+    background-color: #666;  /* Couleur d'arriere-plan du menu */ 
+}
+.dropdownmenu li a {
+    color: #ccc; /* Couleur du texte du menu */ 
+} 
+.dropdownmenu li:hover {
+    background-color: #000; /* Couleur d'arriere-plan du menu au survol */ }
+.dropdownmenu li:hover a {
+    color: #fff; /* Couleur du texte du menu au survol */ 
+}
+.dropdownmenu ul li {
+    background-color: #ccc; /* Couleur d'arriere-plan des sous-menu */
+}
+.dropdownmenu ul li:hover {
+    background-color: #000;  /* Couleur d'arriere-plan des sous-menu au survol */ } 
+.dropdownmenu ul li a {
+    color: #666; /* Couleur du texte des sous-menu */ } 
+.dropdownmenu ul li:hover a {   
+    color: #f00; /* Couleur du texte des sous-menu au survol */
